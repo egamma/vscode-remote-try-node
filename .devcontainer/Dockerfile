@@ -14,6 +14,9 @@ FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:0-12
 # dockerComposeFile property or want the image itself to start with different ID
 # values. See https://aka.ms/vscode-remote/containers/non-root-user for details.
 
+ARG USERNAME=root
+ARG USER_UID=0
+ARG USER_GID=$USER_UID
 
 # ** [Optional] Uncomment this section to install additional packages. **
 #
