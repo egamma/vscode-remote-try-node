@@ -4,6 +4,7 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "runOptions": {"runOn": "folderOpen"},
             "label": "echo",
             "type": "shell",
             "command": "echo Hello"
