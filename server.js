@@ -17,5 +17,7 @@ app.get('/', (req, res) => {
 	res.send('Hello remote world!\n');
 });
 
-app.listen(PORT, HOST);
+const server = app.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}`);
+
+module.exports = server;
